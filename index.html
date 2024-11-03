@@ -29,34 +29,10 @@
         /* Style des catégories */
         .categories {
             margin: 15px 0;
-            position: relative; /* Pour le positionnement des sous-catégories */
         }
         .categories a {
             margin: 0 10px;
             font-size: 18px;
-        }
-        /* Style des sous-catégories */
-        .subcategories {
-            display: none; /* Masquer par défaut */
-            position: absolute; /* Pour superposer les sous-catégories */
-            left: 50%; /* Positionner à 50% de la largeur */
-            transform: translateX(-50%); /* Centrer horizontalement */
-            top: 100%; /* Pour les placer juste en dessous */
-            background-color: #fff; /* Fond blanc pour les sous-catégories */
-            border: 1px solid #aaa; /* Bordure pour les sous-catégories */
-            padding: 10px; /* Espacement interne */
-            text-align: center; /* Centrer le texte */
-            z-index: 1000; /* Pour que les sous-catégories apparaissent au-dessus */
-        }
-        /* Afficher les sous-catégories lors du survol */
-        .categories a:hover + .subcategories {
-            display: block; /* Afficher les sous-catégories */
-        }
-        /* Style des liens des sous-catégories */
-        .subcategories a {
-            display: block; /* Pour les afficher sur des lignes séparées */
-            margin: 10px 0;
-            font-size: 16px; /* Police légèrement plus petite */
         }
     </style>
 </head>
@@ -74,15 +50,21 @@
         <a href="code.html">Code</a>
         <a href="transcriptions.html">Transcriptions</a>
         <a href="music.html">Music</a>
-        
-        <!-- Lien pour SynthPresets, suivi des sous-catégories -->
-        <a href="#">SynthPresets</a>
-        <div class="subcategories">
-            <a href="take5.html">Sequential Take5</a>
-            <a href="nordpad3p.html">Nord Pad 3p</a>
-        </div>
+        <a href="synthpresets.html">SynthPresets</a>
     </nav>
 
     <!-- Contenu principal -->
     <main>
-        
+        <p>Bienvenue sur ma page, site en cours de réécriture...</p>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <a href="https://www.youtube.com/@Poulet39" target="_blank">YouTube</a> |
+        <a href="https://www.facebook.com/david.regaldi.1/" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/david.regaldi/?hl=fr" target="_blank">Instagram</a> |
+        <a href="https://soundcloud.com/david-regaldi" target="_blank">SoundCloud</a>
+    </footer>
+
+</body>
+</html>
