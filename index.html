@@ -12,7 +12,8 @@
             color: #000;
             margin: 0;
             padding: 0;
-            text-align: center;
+            min-height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+            position: relative; /* Position relative pour le body */
         }
         /* En-tête et pied de page */
         header, footer {
@@ -20,6 +21,7 @@
             padding: 10px;
             border-top: 1px solid #aaa;
             border-bottom: 1px solid #aaa;
+            text-align: center; /* Centrer le texte dans l'en-tête et le pied de page */
         }
         /* Style des liens */
         a {
@@ -29,10 +31,22 @@
         /* Style des catégories */
         .categories {
             margin: 15px 0;
+            text-align: center; /* Centrer les liens des catégories */
         }
         .categories a {
             margin: 0 10px;
             font-size: 18px;
+        }
+        /* Contenu principal */
+        main {
+            padding-bottom: 50px; /* Ajouter un padding en bas pour éviter que le contenu chevauche le footer */
+        }
+        /* Pied de page */
+        footer {
+            position: absolute; /* Position absolue pour le footer */
+            bottom: 0; /* Positionner le footer en bas */
+            left: 0; /* Alignement à gauche */
+            right: 0; /* Alignement à droite */
         }
     </style>
 </head>
