@@ -29,29 +29,32 @@
         /* Style des catégories */
         .categories {
             margin: 15px 0;
+            position: relative; /* Pour le positionnement des sous-catégories */
         }
         .categories a {
             margin: 0 10px;
             font-size: 18px;
         }
-        /* Case à cocher cachée */
-        .synth-presets-toggle {
-            display: none;
-        }
         /* Style des sous-catégories */
         .subcategories {
-            display: none;
-            margin: 20px 0;
+            display: none; /* Masquer par défaut */
+            position: absolute; /* Pour superposer les sous-catégories */
+            left: 0;
+            top: 100%; /* Pour les placer juste en dessous */
+            background-color: #fff; /* Fond blanc pour les sous-catégories */
+            border: 1px solid #aaa; /* Bordure pour les sous-catégories */
+            padding: 10px; /* Espacement interne */
+            text-align: left; /* Alignement à gauche */
         }
-        /* Affichage des sous-catégories lorsque la case est cochée */
-        .synth-presets-toggle:checked + .subcategories {
-            display: block;
+        /* Afficher les sous-catégories lors du survol */
+        .categories a:hover + .subcategories {
+            display: block; /* Afficher les sous-catégories */
         }
         /* Style des liens des sous-catégories */
         .subcategories a {
             display: block; /* Pour les afficher sur des lignes séparées */
             margin: 10px 0;
-            font-size: 18px;
+            font-size: 16px; /* Police légèrement plus petite */
         }
     </style>
 </head>
@@ -70,11 +73,8 @@
         <a href="transcriptions.html">Transcriptions</a>
         <a href="music.html">Music</a>
         
-        <!-- Case à cocher pour SynthPresets -->
-        <input type="checkbox" id="synthPresets" class="synth-presets-toggle">
-        <label for="synthPresets">SynthPresets</label>
-        
-        <!-- Sous-catégories -->
+        <!-- Lien pour SynthPresets, suivi des sous-catégories -->
+        <a href="#">SynthPresets</a>
         <div class="subcategories">
             <a href="take5.html">Sequential Take5</a>
             <a href="nordpad3p.html">Nord Pad 3p</a>
