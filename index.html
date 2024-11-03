@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David REGALDI</title>
     <style>
+        /* Structure de base */
         body {
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             min-height: 100vh;
             margin: 0;
             text-align: center;
         }
+        /* Header et Footer fixés en haut et bas */
         header, footer {
             background-color: #333;
             color: #fff;
             padding: 20px;
             width: 100%;
-            max-width: 800px;
+            text-align: center;
         }
-        main {
+        /* Conteneur centralisé pour le contenu principal */
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
             padding: 20px;
-            max-width: 800px;
         }
+        /* Style des catégories */
         .categories {
             display: flex;
             gap: 20px;
@@ -34,7 +43,7 @@
             margin: 20px 0;
         }
         .categories a {
-            font-size: 24px; /* Police plus grande */
+            font-size: 24px;
             color: #333;
             text-decoration: none;
             padding: 10px 15px;
@@ -46,6 +55,7 @@
             background-color: #333;
             color: #fff;
         }
+        /* Liens du footer */
         footer a {
             color: #fff;
             text-decoration: none;
@@ -59,25 +69,29 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <h1>David REGALDI</h1>
     </header>
 
-    <!-- Lien vers différentes pages / catégories -->
-    <nav class="categories">
-        <a href="index.html">Index</a>
-        <a href="biographie.html">Biographie</a>
-        <a href="code.html">Code</a>
-        <a href="transcriptions.html">Transcriptions</a>
-        <a href="music.html">Music</a>
-        <a href="soundbanks.html">SoundBanks</a>
-    </nav>
+    <!-- Conteneur principal centré -->
+    <div class="container">
+        <nav class="categories">
+            <a href="index.html">Index</a>
+            <a href="biography.html">Biography</a>
+            <a href="code.html">Code</a>
+            <a href="transcription.html">Transcription</a>
+            <a href="music.html">Music</a>
+            <a href="soundbanks.html">SoundBanks</a>
+        </nav>
 
-    <!-- Contenu principal -->
-    <main>
-        <p>Bienvenue sur ma page, site en cours de réécriture...</p>
-    </main>
+        <!-- Contenu principal -->
+        <main>
+            <p>Bienvenue sur ma page, site en cours de réécriture...</p>
+        </main>
+    </div>
 
+    <!-- Footer -->
     <footer>
         <a href="https://www.youtube.com/@Poulet39" target="_blank">YouTube</a> |
         <a href="https://www.facebook.com/david.regaldi.1/" target="_blank">Facebook</a> |
