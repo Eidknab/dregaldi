@@ -5,71 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David REGALDI</title>
     <style>
-        /* Structure de base */
+        /* Mise en forme de base */
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 100vh;
+            font-family: "Times New Roman", serif;
+            background-color: #f0f0f0;
+            color: #000;
             margin: 0;
+            padding: 0;
             text-align: center;
         }
-        /* Header et Footer fixés en haut et bas */
+        /* En-tête et pied de page */
         header, footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            width: 100%;
-            text-align: center;
+            background-color: #ddd;
+            padding: 10px;
+            border-top: 1px solid #aaa;
+            border-bottom: 1px solid #aaa;
         }
-        /* Conteneur centralisé pour le contenu principal */
-        .container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            max-width: 800px;
-            padding: 20px;
+        /* Style des liens */
+        a {
+            color: #0000ee;
+            text-decoration: underline;
         }
         /* Style des catégories */
         .categories {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px 0;
+            margin: 15px 0;
         }
         .categories a {
-            font-size: 24px;
-            color: #333;
-            text-decoration: none;
-            padding: 10px 15px;
-            border: 2px solid #333;
-            border-radius: 8px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .categories a:hover {
-            background-color: #333;
-            color: #fff;
-        }
-        /* Liens du footer */
-        footer a {
-            color: #fff;
-            text-decoration: none;
             margin: 0 10px;
             font-size: 18px;
-        }
-        footer a:hover {
-            color: #ffa500;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- En-tête -->
     <header>
         <h1>David REGALDI</h1>
     </header>
@@ -77,22 +46,19 @@
     <!-- Navigation sous le header -->
     <nav class="categories">
         <a href="index.html">Index</a>
-        <a href="bio.html">Bio</a>
+        <a href="biography.html">Biography</a>
         <a href="code.html">Code</a>
-        <a href="transcriptions.html">Transcriptions</a>
+        <a href="transcription.html">Transcription</a>
         <a href="music.html">Music</a>
         <a href="soundbanks.html">SoundBanks</a>
     </nav>
 
-    <!-- Conteneur principal centré -->
-    <div class="container">
-        <!-- Contenu principal -->
-        <main>
-            <p>Bienvenue sur ma page, site en cours de réécriture...</p>
-        </main>
-    </div>
+    <!-- Contenu principal -->
+    <main>
+        <p>Bienvenue sur ma page, site en cours de réécriture...</p>
+    </main>
 
-    <!-- Footer -->
+    <!-- Pied de page -->
     <footer>
         <a href="https://www.youtube.com/@Poulet39" target="_blank">YouTube</a> |
         <a href="https://www.facebook.com/david.regaldi.1/" target="_blank">Facebook</a> |
